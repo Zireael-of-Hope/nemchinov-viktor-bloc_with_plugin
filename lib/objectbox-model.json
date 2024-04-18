@@ -1,0 +1,198 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:193904738859485020",
+      "lastPropertyId": "4:2796487801088387478",
+      "name": "Emoji",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8810014991245785436",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3499221354777943791",
+          "name": "symbol",
+          "type": 9
+        },
+        {
+          "id": "3:7828047238866343290",
+          "name": "authorId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:6250568156512954091",
+          "relationTarget": "User"
+        },
+        {
+          "id": "4:2796487801088387478",
+          "name": "tweetId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:744317998750169124",
+          "relationTarget": "Tweet"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6802527565334335308",
+      "lastPropertyId": "5:8744211449160744337",
+      "name": "Tweet",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:8740205538480224816",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1129079082597681793",
+          "name": "text",
+          "type": 9
+        },
+        {
+          "id": "3:5235892766551452294",
+          "name": "timePosted",
+          "type": 10
+        },
+        {
+          "id": "4:2610267662223771433",
+          "name": "accessModifierInt",
+          "type": 6
+        },
+        {
+          "id": "5:8744211449160744337",
+          "name": "authorId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:3192162792295545307",
+          "relationTarget": "User"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8884652474970771443",
+      "lastPropertyId": "16:3434904020167505701",
+      "name": "User",
+      "flags": 2,
+      "properties": [
+        {
+          "id": "1:3932094381253031103",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3678233485209529660",
+          "name": "username",
+          "type": 9
+        },
+        {
+          "id": "3:8537636107573871532",
+          "name": "email",
+          "type": 9
+        },
+        {
+          "id": "4:3576595558940240325",
+          "name": "password",
+          "type": 9
+        },
+        {
+          "id": "5:5337290277749393739",
+          "name": "profileName",
+          "type": 9
+        },
+        {
+          "id": "6:4354320096075991188",
+          "name": "profileDescription",
+          "type": 9
+        },
+        {
+          "id": "7:5942187959866644650",
+          "name": "occupation",
+          "type": 9
+        },
+        {
+          "id": "8:4238754105526472681",
+          "name": "location",
+          "type": 9
+        },
+        {
+          "id": "9:4193931447688843641",
+          "name": "profileAppBarImage",
+          "type": 23
+        },
+        {
+          "id": "10:2321336224221367908",
+          "name": "profileImage",
+          "type": 23
+        },
+        {
+          "id": "11:6190695128550058705",
+          "name": "genderInt",
+          "type": 6
+        },
+        {
+          "id": "12:1763723321378618358",
+          "name": "age",
+          "type": 6
+        },
+        {
+          "id": "13:2965515655045719691",
+          "name": "linkToWebsite",
+          "type": 9
+        },
+        {
+          "id": "14:5975045404787140896",
+          "name": "birthDate",
+          "type": 10
+        },
+        {
+          "id": "15:4583189391939660768",
+          "name": "joinDate",
+          "type": 10
+        },
+        {
+          "id": "16:3434904020167505701",
+          "name": "displayName",
+          "type": 9
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:1997197060615894094",
+          "name": "emojis",
+          "targetId": "1:193904738859485020"
+        },
+        {
+          "id": "2:2632440999920358475",
+          "name": "followers",
+          "targetId": "3:8884652474970771443"
+        },
+        {
+          "id": "3:2110806111043784448",
+          "name": "following",
+          "targetId": "3:8884652474970771443"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "3:8884652474970771443",
+  "lastIndexId": "3:3192162792295545307",
+  "lastRelationId": "3:2110806111043784448",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
